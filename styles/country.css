@@ -2,21 +2,8 @@
     position: relative;
 }
 
-.country__btn {
-    position: relative;
-    padding-right: 13px;
-}
-
-.country__btn::after {
-    content: '';
-    position: absolute;
-    display: block;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 9px;
-    height: 6px;
-    background: url("../img/arrow-down.svg") no-repeat center;
+.country__btn span{
+    padding-right: 4px;
 }
 
 .country__wrapper {
@@ -73,5 +60,24 @@
     }
     .country__choise {
         font-size: 16px;
+    }
+
+    .country__btn span{
+        padding-right: 8px;
+    }
+    
+    .country__btn {
+        transition-property: color;
+        transition-duration: .2s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .country__btn:hover,
+    .country__btn:focus {
+        color: #0017E6;
+    }
+
+    .country__btn:active {
+        color: #8793FF;
     }
 }

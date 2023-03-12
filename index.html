@@ -37,7 +37,13 @@
             </nav>
 
             <div class="header__country country">
-                <button class="country__btn">Страна</button>
+                <button class="country__btn">
+                    <span>Страна</span>
+                    <svg width="13" height="8">
+                        <use href="#arrow-down" />
+                    </svg>
+
+                </button>
 
                 <div class="country__wrapper">
                     <ul class="country__list">
@@ -203,8 +209,16 @@
     
                     </div>
 
-                    <button class="goods__arrow goods__arrow_prev"></button>
-                    <button class="goods__arrow goods__arrow_next"></button>
+                    <button class="goods__arrow goods__arrow_prev">
+                        <svg class="goods__arrow_svg">
+                            <use href="#arrow-slider" />
+                        </svg>
+                    </button>
+                    <button class="goods__arrow goods__arrow_next">
+                        <svg class="goods__arrow_svg">
+                            <use href="#arrow-slider" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
@@ -249,10 +263,10 @@
                 <div class="footer__navigation navigation">
                     <ul class="navigation__list navigation__list_column-mob">
                         <li class="navigation__item">
-                            <a href="#goods" class="navigation__link">Продукты</a>
+                            <a href="#goods" class="navigation__link_black">Продукты</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="#features" class="navigation__link">Характеристики</a>
+                            <a href="#features" class="navigation__link_black">Характеристики</a>
                         </li>
                     </ul>
                 </div>
@@ -285,6 +299,24 @@
     <svg style="display: none">
         <symbol id="arrow-blue" width="13" height="8" viewBox="0 0 13 8" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M12.3536 4.35355C12.5488 4.15829 12.5488 3.84171 12.3536 3.64645L9.17157 0.464466C8.97631 0.269204 8.65973 0.269204 8.46447 0.464466C8.2692 0.659728 8.2692 0.976311 8.46447 1.17157L11.2929 4L8.46447 6.82843C8.2692 7.02369 8.2692 7.34027 8.46447 7.53553C8.65973 7.7308 8.97631 7.7308 9.17157 7.53553L12.3536 4.35355ZM0 4.5H12V3.5H0L0 4.5Z"/>
+        </symbol>
+        <symbol id="arrow-slider" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_b_112_284)">
+            <circle cx="30" cy="30" r="30" transform="rotate(180 30 30)" fill="white" fill-opacity="0.6"/>
+            <circle cx="30" cy="30" r="29.5" transform="rotate(180 30 30)" stroke="currentColor"/>
+            </g>
+            <path d="M18.6263 29.2929C18.2358 29.6834 18.2358 30.3166 18.6263 30.7071L24.9903 37.0711C25.3808 37.4616 26.014 37.4616 26.4045 37.0711C26.795 36.6805 26.795 36.0474 26.4045 35.6569L20.7476 30L26.4045 24.3431C26.795 23.9526 26.795 23.3195 26.4045 22.9289C26.014 22.5384 25.3808 22.5384 24.9903 22.9289L18.6263 29.2929ZM40.6667 29H19.3334V31H40.6667V29Z" fill="currentColor"/>
+            <defs>
+            <filter id="filter0_b_112_284" x="-10" y="-10" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_112_284"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_112_284" result="shape"/>
+            </filter>
+            </defs>
+        </symbol>
+        <symbol id="arrow-down" width="9" height="5" viewBox="0 0 9 5" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 5L8.39711 0.5H0.602886L4.5 5Z" />
         </symbol>
     </svg>
 </body>

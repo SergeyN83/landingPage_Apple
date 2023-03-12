@@ -35,7 +35,8 @@ new Swiper('.goods__block', {
         nextEl: '.goods__arrow_next'
     },
     preventClicks: true,
-    a11y: false
+    a11y: false,
+    loop: true
 });
 
 // modal
