@@ -18,4 +18,23 @@
         gap: 84px;
     }
 
+    .navigation__link,
+    .navigation__link_black {
+        transition-property: color;
+        transition-duration: .2s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .navigation__link:hover,
+    .navigation__link:focus,
+    .navigation__link_black:hover,
+    .navigation__link_black:focus {
+        color: #0017E6;
+    }
+
+    .navigation__link:active,
+    .navigation__link_black:active {
+        color: #8793FF;
+    }
+
 }

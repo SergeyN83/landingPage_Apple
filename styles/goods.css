@@ -18,20 +18,24 @@
 .goods__helper {
     position: relative;
     overflow: initial;
-
 }
 
-.goods__arrow {
+.goods__arrow{
     position: absolute;
-    top: calc((290px / 2) - 30px);
-    display: block;
     width: 60px;
     height: 60px;
-    background-image: url('../img/arrow-slider.svg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    top: calc((290px / 2) - 30px);
+    display: block;
     z-index: 5;
+}
+
+.goods__arrow_svg {
+    display: block;
+    width: 100%;
+    color: #7883E5;
+    transition-property: color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
 }
 
 .goods__arrow_prev {
@@ -88,6 +92,16 @@
         height: 90px;
         top: calc((370px / 2) - 45px);
     }
+    
+    .goods__arrow svg:hover,
+    .goods__arrow svg:focus {
+        color:#0017E6;
+    }
+
+    .goods__arrow svg:active {
+        color: #8793FF;
+    }
+
     .goods__arrow_prev {
         left: 2px;
     }
